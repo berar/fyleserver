@@ -15,7 +15,6 @@ public class RegistrationHandler implements MessageReceivedHandler {
 	private String errorMessage;
 	private boolean isFatal;
 	private LRResponse lrr;
-	
 	private LRMessage message;
 	
 	public RegistrationHandler(LRMessage message) {
@@ -32,6 +31,7 @@ public class RegistrationHandler implements MessageReceivedHandler {
 		if (hasError()) {
 			return errorMessage;
 		}
+		//TODO
 		return "REGISTER OK";
 	}
 
